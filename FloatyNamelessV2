@@ -1067,8 +1067,8 @@ while event:Wait() do
     if (vel*v3(1, 0, 1)).Magnitude > 2 then -- walk
         neck.C0 = neck.C0:Lerp(cf(0, 1, 0) * euler(-1.1882496193148399 + 0.08726646259971647 * sin((sine + -30) * 0.05), 0, -3.1590459461097367), 0.2) 
             rootJoint.C0 = rootJoint.C0:Lerp(cf(0 * sin(sine * 0), 3 + 0.5 * sin(sine * 0.05), 0) * euler(-2.2882496193148399, 0 * sin((sine + 7.5) * 0), -3.1590459461097367 + 0 * sin((sine + 7.5) * 0.05)), 0.2) 
-             leftShoulder.C0 = leftShoulder.C0:Lerp(cf(-1, 0.2 + -0.05 * sin(sine * 0.05), 0.05 * sin(sine * 0.05)) * euler(-0.6981317007977318 + -0.05235987755982989 * sin((sine + 15) * 0.05), -1.2217304763960306, 0), 0.2) 
-           rightShoulder.C0 = rightShoulder.C0:Lerp(cf(1, 0.2 + -0.05 * sin(sine * 0), 0.05 * sin(sine * 0)) * euler(0.6981317007977318 + -0.95235987755982989 * sin((sine + 15) * 0), 1.2217304763960306, 0), 0.2) 
+         leftShoulder.C0 = leftShoulder.C0:Lerp(cf(-0.85, 0.65 + 0.1 * sin((sine + -15) * 0.05), 0.2 + 0.1 * sin(sine * 0.05)) * euler(1.5707963267948966 + 0.08726646259971647 * sin(sine * 0.05), -0.7853981633974483, 1.7453292519943295), 0.2) 
+           rightShoulder.C0 = rightShoulder.C0:Lerp(cf(1, 0.25 + -0.1 * sin((sine + 20) * 0.05), -0.5) * euler(4.1887902047863905, 0.3490658503988659, -1.7453292519943295), 0.2)  
             leftHip.C0 = leftHip.C0:Lerp(cf(-1, -1 + 0.1 * sin(sine * 0), 0.05 * sin(sine * 0.05)) * euler(1.5707963267948966, -1.6580627893946132, 1.5707963267948966 + 0.05235987755982989 * sin(sine * 0.05)), 0.2) 
             rightHip.C0 = rightHip.C0:Lerp(cf(1, -0.7, -0.7) * euler(0, 1.5707963267948966, -0.5490658503988659 + -0.2 * sin((sine + -5) * 0)), 0.2) 
     elseif vel.Y > 2 then -- jump
@@ -1089,7 +1089,7 @@ while event:Wait() do
 		if not mode then
             neck.C0 = neck.C0:Lerp(cf(0, 1, 0) * euler(-1.5882496193148399 + 0.08726646259971647 * sin((sine + -30) * 0.05), 0, -3.1590459461097367), 0.2) 
             rootJoint.C0 = rootJoint.C0:Lerp(cf(0 * sin(sine * 0), 3 + 0.5 * sin(sine * 0.05), 0) * euler(-1.7882496193148399, 0 * sin((sine + 7.5) * 0), -3.1590459461097367 + 0 * sin((sine + 7.5) * 0.05)), 0.2) 
-             leftShoulder.C0 = leftShoulder.C0:Lerp(cf(-1, 0.2 + -0.05 * sin(sine * 0.05), 0.05 * sin(sine * 0.05)) * euler(-0.6981317007977318 + -0.05235987755982989 * sin((sine + 15) * 0.05), -1.2217304763960306, 0), 0.2) 
+             leftShoulder.C0 = leftShoulder.C0:Lerp(cf(-1 + 0 * sin((sine + 0) * 0.1), 0.5 + 0 * sin((sine + 0) * 0.1), 0 + 0 * sin((sine + 0) * 0.1)) * euler(-0 + 0 * sin((sine + 0) * 0.1), -1.2217304763960306 + 0 * sin((sine + 0) * 0.1), -0.8726646259971648 + 0 * sin((sine + 0) * 0.1)), 0.2) 
             rightShoulder.C0 = rightShoulder.C0:Lerp(cf(1, 0.25 + -0.1 * sin((sine + 20) * 0.05), -0.5) * euler(4.1887902047863905, 0.3490658503988659, -1.7453292519943295), 0.2)  
             leftHip.C0 = leftHip.C0:Lerp(cf(-1, -1 + 0.1 * sin(sine * 0), 0.05 * sin(sine * 0.05)) * euler(1.5707963267948966, -1.6580627893946132, 1.5707963267948966 + 0.05235987755982989 * sin(sine * 0.05)), 0.2) 
             rightHip.C0 = rightHip.C0:Lerp(cf(1, -0.7, -0.7) * euler(0, 1.5707963267948966, -0.5490658503988659 + -0.2 * sin((sine + -5) * -0.05)), 0.2) 
